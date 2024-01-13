@@ -10,7 +10,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 
 var app = builder.Build();
 
-Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Ngo9BigBOggjHTQxAR8/V1NAaF5cWWJCf0x3QXxbf1x0ZFRGal5XTnZeUiweQnxTdEFjWH9ZcXRXQGBdUEJ0Wg==");
+Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("Mgo+DSMBMAY9C3t2UVhhQlVFfV5AQmBIYVp/TGpJfl96cVxMZVVBJAtUQF1hTX5Sd0RjX31fdHFcR2Fd");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -25,6 +25,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Dashboard}/{action=Index}/{id?}");
 
 app.Run();
